@@ -26,6 +26,7 @@ np_marks = np.array(marks)
 np_marks
 ```
 
+
 ## Creating 2d arrays
 ```python
 marks = [["Shushant","Tara","Vibhav"],[91,93,99]]
@@ -40,12 +41,18 @@ marks_1d = [91,93,92]
 np_marks_1d = np.array(marks_1d)
 print(np_marks_1d.shape)
 ```
+```
+(3,)
+```
 
 - 2D
 ```python
 marks_2d = [["Shushant","Tara","Vibhav"],[91,93,99]]
 np_marks_2d = np.array(marks_2d)
 print(np_marks_2d)
+```
+```
+(2,3)
 ```
 - 1D shape → just number of elements: (n,)
 - 2D shape → rows and columns: (rows, cols)
