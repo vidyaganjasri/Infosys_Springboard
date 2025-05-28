@@ -1,8 +1,4 @@
 # Operations on nd arrays
-- Elements in the nd array are accessed using their  index within the square brackets.
-- Both neg and pos indices can be used to access the elements.
-- Pos start from the beginning of the array while neg from the end
-- Array indexing starts from 0 in positive indexing and form -1 in neg indexing
     
 - 
 ## Accessing 1d elements
@@ -131,7 +127,7 @@ Can be sorted using np.sort(array) and array.sort()
 - np.sort(array) will not sort in place
 - array.sort() will sort in place
 
-## np.sort(arr)
+### np.sort(arr)
 ``` python
 a = np.array([4,3,7,2,8])
 print(np.sort(a))
@@ -141,7 +137,7 @@ print(a)
 [2 3 4 7 8]
 [4 3 7 2 8]
 ```
-## arr.sort()
+### arr.sort()
 
 ```python
 a = np.array([4,3,7,2,8])
