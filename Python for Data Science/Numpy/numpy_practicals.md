@@ -49,3 +49,16 @@ print(np_marks_2d)
 ```
 - 1D shape → just number of elements: (n,)
 - 2D shape → rows and columns: (rows, cols)
+
+## dtype
+- Use to know the data type of the data in the array
+```python
+marks_1d = [91,93,92]
+np_marks_1d = np.array(marks_1d)
+print(np_marks_1d.dtype)
+```
+```
+int32
+```
+
+
