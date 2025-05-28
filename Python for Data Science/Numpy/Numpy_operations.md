@@ -1,6 +1,5 @@
 # Operations on nd arrays
     
-- 
 ## Accessing 1d elements
 ```python
 a = np.array([1,2,3])
