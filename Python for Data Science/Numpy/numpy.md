@@ -12,10 +12,10 @@ It provides a powerful array objects which are more faster and memory effecient 
 
 ## Key Performance: 
 
--- **Performance**: NumPy is more effecient then Python lists when handling large amout of data
--- **Vectorized Operations**: Using NumPy we can easily perform operations on while arrays directly
--- **Multidimensional Arrays**: Allows us to work with Ndimensional arrays
--- **Useful functions**: Comes with many math functions like `mean`, `sum` etc
+- **Performance**: NumPy is more effecient then Python lists when handling large amout of data
+- **Vectorized Operations**: Using NumPy we can easily perform operations on while arrays directly
+- **Multidimensional Arrays**: Allows us to work with Ndimensional arrays
+- **Useful functions**: Comes with many math functions like `mean`, `sum` etc
 
 ## Applications of NumPy
 NumPy is almost used in every field that involves numbers or data.
