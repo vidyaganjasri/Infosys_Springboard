@@ -63,10 +63,13 @@ df.sort_values(by = 'cylinders')
 ---
 
 ## Preserving Index 
+
 Transforming data(Encrypting marks)
+
 ![image](https://github.com/user-attachments/assets/d27fc5f2-f4b9-4b2c-a2c8-006a9a2a7122)
 
 
 Resetting Index 
+
 ![image](https://github.com/user-attachments/assets/206971de-8249-40be-9815-9084b43a2650)
 
