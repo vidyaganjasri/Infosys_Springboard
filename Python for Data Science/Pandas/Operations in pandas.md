@@ -73,3 +73,92 @@ Resetting Index
 
 ![image](https://github.com/user-attachments/assets/206971de-8249-40be-9815-9084b43a2650)
 
+---
+## Broadcasting operation
+If we want to make chagnes to all the values in the data
+![image](https://github.com/user-attachments/assets/54ef9a56-31be-4489-9339-ee5121c6161f)
+
+```python
+new_marks = marks_df + 5
+new_marks
+```
+![image](https://github.com/user-attachments/assets/797767f3-7e78-4f7d-a0d0-9a4e107c23ac)
+
+## Aggregation Operations in Pandas
+
+Aggregation operation is used to aggregate using one or more operations over the specified axis.
+
+```python
+#Using list comprehension to get the numerical columns
+list1 = [col for col in df.columns if df[col].dtype in ['float', 'int64']]
+df[list1].agg(['min', 'max'])
+```
+
+
+![image](https://github.com/user-attachments/assets/cb62228d-ca84-4fd0-9653-5b360e865cde)
+
+
+## Grouping operations in Pandas
+
+to know the number of cars manufactured 
+
+```python
+df.groupby(['model_year']).count()[['name']]
+```
+df.groupby(['model_year']).count()[['name']]
+
+---
+
+## Concatinating DataFrames 
+
+Want to combine the marks of students
+
+```python
+marks_A = {'Chemistry': [67,90,66,32], 
+        'Physics': [45,92,72,40],  
+          }
+marks_A_df = pd.DataFrame(marks_A, index = ['Subodh', 'Ram', 'Abdul', 'John'])
+marks_B = {'Chemistry': [72,45,60,98], 
+        'Physics': [78,34,72,95],  
+          }
+marks_B_df = pd.DataFrame(marks_B, index = ['Nandini', 'Zoya', 'Shivam', 'James'])
+```
+
+```python
+pd.concat([marks_A_df,marks_B_df], sort = False)
+```
+![image](https://github.com/user-attachments/assets/8149b95a-eae4-4e41-b37c-d20a35f3eab3)
+
+---
+
+## Pivot Table 
+
+What does the pivot table do?
+Imagine you have a big table of cars. Each row is a car, and each car has:
+
+A year
+
+Some numbers like horsepower, weight, mileage, etc.
+
+Now, you want to know:
+
+“For each year, what is the average horsepower, weight, mileage, etc. of all cars in that year?”
+
+✅ That’s exactly what the pivot table does!
+You just tell it:
+
+index='Year' → group the cars by year
+
+aggfunc='mean' → and take the average of the numbers
+
+So yes — for each year, you get one row, and in that row you see the average value of each column.
+
+```python
+import pandas as pd
+
+# Suppose df is the DataFrame
+pd.pivot_table(df, index='Year')
+
+```
+![image](https://github.com/user-attachments/assets/70b9a0ed-1011-4e75-9227-008ea3413b5f)
+
